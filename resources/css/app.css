@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f8fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: #52c9ff;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 64px;
+}
+
+nav img {
+    height: 56px;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+nav div a {
+    color: #374151;
+    font-weight: 500;
+}
+
+nav div a:hover {
+    color: #111827;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+/* Cards grid */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 72rem;
+    margin: 0 auto 48px;
+    padding: 0 16px;
+}
+
+/* Card */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 16px;
+}
+
+.card-body h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 8px 0 4px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 20px;
+}
+
+/* Page titles */
+h1 {
+    font-weight: bold;
+    text-align: center;
+    margin: 32px 0;
+}
+
+/* Home title */
+.page-title {
+    font-size: 3rem;
+}
+
+/* Animal details */
+.animal-details {
+    display: flex;
+    align-items: stretch;
+    gap: 32px;
+    padding: 0 64px;
+    margin-bottom: 48px;
+}
+
+.animal-details img {
+    width: 256px;
+    height: 256px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.animal-details div {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.detail-title {
+    font-size: 3rem;
+}
+
+/* Error page */
+.error-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 150px);
+}
+
+.error-container h1 {
+    font-size: 3rem;
+}
