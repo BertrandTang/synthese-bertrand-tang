@@ -1,6 +1,6 @@
 <div class="card">
     <a href="{{ route('animals.details', $id) }}">
-        <img src="{{ $img }}" alt="{{ $name }}">
+        <img src="{{ asset($img) }}" alt="{{ $name }}">
     </a>
     <div class="card-body">
         <h2>{{ $name }}</h2>
